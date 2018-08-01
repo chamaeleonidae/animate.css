@@ -122,8 +122,8 @@
 @-webkit-keyframes chmln-fade_in_down {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -33%, 0);
+    transform: translate3d(0, -33%, 0);
   }
 
   to {
@@ -136,8 +136,8 @@
 @keyframes chmln-fade_in_down {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -33%, 0);
+    transform: translate3d(0, -33%, 0);
   }
 
   to {
@@ -155,8 +155,8 @@
 @-webkit-keyframes chmln-fade_in_left {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
   }
 
   to {
@@ -169,8 +169,8 @@
 @keyframes chmln-fade_in_left {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
   }
 
   to {
@@ -188,8 +188,8 @@
 @-webkit-keyframes chmln-fade_in_right {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
   }
 
   to {
@@ -202,8 +202,8 @@
 @keyframes chmln-fade_in_right {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
   }
 
   to {
@@ -221,8 +221,8 @@
 @-webkit-keyframes chmln-fade_in_up {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 33%, 0);
+    transform: translate3d(0, 33%, 0);
   }
 
   to {
@@ -235,8 +235,8 @@
 @keyframes chmln-fade_in_up {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 33%, 0);
+    transform: translate3d(0, 33%, 0);
   }
 
   to {

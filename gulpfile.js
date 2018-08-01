@@ -15,6 +15,7 @@ var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 
 var prefixWithChmln = require('./lib/prefix_with_chmln');
+var lessenMovement = require('./lib/lessen_movement');
 
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
@@ -46,6 +47,7 @@ gulp.task('createCSS', function() {
     .src(activatedAnimations)
     .pipe(concat(opts.concatName))
     .pipe(prefixWithChmln())
+    .pipe(lessenMovement())
     .pipe(postcss([autoprefixer(opts.autoprefixer)]))
     .pipe(gulp.dest(opts.destPath))
     .pipe(postcss([cssnano({reduceIdents: {keyframes: false}})]))
