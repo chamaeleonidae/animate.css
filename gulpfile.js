@@ -14,6 +14,8 @@ var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 
+var prefixWithChmln = require('./lib/prefix_with_chmln');
+
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
 var activatedAnimations = activateAnimations();
@@ -32,16 +34,7 @@ var opts = {
     suffix: '.min',
   },
 
-  banner: [
-    '@charset "UTF-8";\n',
-    '/*!',
-    ' * <%= name %> -<%= homepage %>',
-    ' * Version - <%= version %>',
-    ' * Licensed under the MIT license - http://opensource.org/licenses/MIT',
-    ' *',
-    ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
-    ' */\n\n',
-  ].join('\n'),
+  banner: '',
 };
 
 // ----------------------------
@@ -52,6 +45,7 @@ gulp.task('createCSS', function() {
   return gulp
     .src(activatedAnimations)
     .pipe(concat(opts.concatName))
+    .pipe(prefixWithChmln())
     .pipe(postcss([autoprefixer(opts.autoprefixer)]))
     .pipe(gulp.dest(opts.destPath))
     .pipe(postcss([cssnano({reduceIdents: {keyframes: false}})]))
@@ -74,7 +68,7 @@ gulp.task('default', gulp.series('createCSS', 'addHeader'));
 
 // Read the config file and return an array of the animations to be activated
 function activateAnimations() {
-  var categories = JSON.parse(fs.readFileSync('animate-config.json')),
+  var categories = JSON.parse(fs.readFileSync('animate-config-chmln.json')),
     category,
     files,
     file,

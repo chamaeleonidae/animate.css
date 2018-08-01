@@ -1,0 +1,14 @@
+{
+  "attention_seekers": {
+    "pulse": true,
+    "shake": true
+  },
+
+  "fading_entrances": {
+    "fadeIn": true,
+    "fadeInDown": true,
+    "fadeInLeft": true,
+    "fadeInRight": true,
+    "fadeInUp": true
+  }
+}
