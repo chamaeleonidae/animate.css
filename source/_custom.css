@@ -1,0 +1,4 @@
+.animated.fade_in,
+.animated.fade_out {
+  animation-duration: 0.75s;
+}

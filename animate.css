@@ -251,6 +251,31 @@
   animation-name: chmln-fade_in_up;
 }
 
+@-webkit-keyframes chmln-fade_out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes chmln-fade_out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.chmln-fade_out {
+  -webkit-animation-name: chmln-fade_out;
+  animation-name: chmln-fade_out;
+}
+
 .chmln-animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -265,4 +290,10 @@
     -webkit-transition: none !important;
     transition: none !important;
   }
+}
+
+.chmln-animated.chmln-fade_in,
+.chmln-animated.chmln-fade_out {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
 }

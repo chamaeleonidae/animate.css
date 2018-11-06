@@ -90,8 +90,9 @@ function activateAnimations() {
       }
     }
   }
-  // prepend base CSS
-  target.push('source/_base.css');
+  // append base CSS
+  target.push('source/_core.css');
+  target.push('source/_custom.css');
 
   if (!count) {
     gutil.log('No animations activated.');

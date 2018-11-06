@@ -10,5 +10,9 @@
     "fadeInLeft": true,
     "fadeInRight": true,
     "fadeInUp": true
+  },
+
+  "fading_exits": {
+    "fadeOut": true
   }
 }

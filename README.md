@@ -6,7 +6,7 @@ Install with `npm install`
 
 Modify the configured / available animations in `animate-config-chmln.json`
 
-Run with `node ./node_modules/gulp/bin/gulp.js`
+Run with `make build` or `node ./node_modules/gulp/bin/gulp.js`
 
 Commit + Push + Update the commit sha in `bnorton/js-asset_pipeline` repo
 
