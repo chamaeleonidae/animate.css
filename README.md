@@ -8,7 +8,7 @@ Modify the configured / available animations in `animate-config-chmln.json`
 
 Run with `make build` or `node ./node_modules/gulp/bin/gulp.js`
 
-Commit + Push + Update the commit sha in `bnorton/js-asset_pipeline` repo
+Commit + Push + Update the commit sha in `bnorton/chmln.js` repo
 
 ---
 
