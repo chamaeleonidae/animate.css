@@ -1,4 +1,17 @@
 .animated.fade_in,
 .animated.fade_out {
-  animation-duration: 0.75s;
+  animation-duration: 750ms;
+}
+
+.animated.animated-0750 {
+  animation-duration: 750ms;
+}
+.animated.animated-0500 {
+  animation-duration: 500ms;
+}
+.animated.animated-0250 {
+  animation-duration: 250ms;
+}
+.animated.animated-0100 {
+  animation-duration: 100ms;
 }

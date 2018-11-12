@@ -294,6 +294,23 @@
 
 .chmln-animated.chmln-fade_in,
 .chmln-animated.chmln-fade_out {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+}
+
+.chmln-animated.chmln-animated-0750 {
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+}
+.chmln-animated.chmln-animated-0500 {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+.chmln-animated.chmln-animated-0250 {
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+}
+.chmln-animated.chmln-animated-0100 {
+  -webkit-animation-duration: 100ms;
+  animation-duration: 100ms;
 }
