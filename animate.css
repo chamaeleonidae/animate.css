@@ -314,3 +314,7 @@
   -webkit-animation-duration: 100ms;
   animation-duration: 100ms;
 }
+.chmln-animated.chmln-animated-0 {
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+}
